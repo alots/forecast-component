@@ -1,0 +1,76 @@
+.container {
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    padding: 20px 0 0 20px;
+    position: relative;
+    float: left;
+    right: -344px; 
+    top: 124px;
+
+    background-color: white;
+
+    &__item-title {
+      margin: 0;
+    }
+
+    &__item {
+      position: relative;
+      bottom: 50px;
+    }
+
+    &__progress-bar-value {
+      position: relative;
+      bottom: 50px;
+      left: -46px;
+    }
+
+    &__item-body {
+      display: flex;
+      flex-direction: row;
+
+      font-weight: 600;
+      white-space: pre;
+      font-size: 24px;
+
+      &_left {
+        color: black;
+      }
+
+      &_right {       
+        color: grey;
+      }
+    }
+  }
+
+  .progress-next-percent {
+    position: relative;
+    float: left;
+    top: 110px;
+    left: 280px;
+  }
+
+}
+
+
+body {
+  margin: 0;
+}
+
+
+.progress-ring__circle {
+  stroke-dasharray: 360 34;
+  stroke-dashoffset: 360 34;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-192deg);
+  transform-origin: 50% 50%,
+}
+
+.progress-ring__circle-orange {
+  stroke-dasharray: 300 30;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-219deg);
+  transform-origin: 50% 50%,
+}
