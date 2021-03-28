@@ -8,7 +8,7 @@
     position: relative;
     float: left;
     right: -344px; 
-    top: 124px;
+    top: 120px;
 
     background-color: white;
 
@@ -61,16 +61,11 @@ body {
 
 
 .progress-ring__circle {
-  stroke-dasharray: 360 34;
-  stroke-dashoffset: 360 34;
-  transition: stroke-dashoffset 0.35s;
-  transform: rotate(-192deg);
-  transform-origin: 50% 50%,
+  stroke-dasharray: 728  728; // 1% == 7.27
+  stroke-dashoffset: 0;
 }
 
 .progress-ring__circle-orange {
-  stroke-dasharray: 300 30;
-  transition: stroke-dashoffset 0.35s;
-  transform: rotate(-219deg);
-  transform-origin: 50% 50%,
+  stroke-dasharray: 527 527;
+  stroke-dashoffset: 0; //1% == 5,27  395.25
 }
